@@ -9,8 +9,11 @@
     <body>
         <h1>hello world </h1>
         <div ng-controller='LunchCheckController'>
-            <input type='text' ng-model="name" placeholder="please enter name here"> 
+            <input type='text' ng-model="name" placeholder="please enter name here" ng-blur='upper();'>
 <p>Your name : {{name}}</p>
+
+<img ng-src='/{{state}}.jpg' style="max-width:200px"> 
+<button ng-click='imagechange()'>Change</button>
         </div>
 
     </body>
